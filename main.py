@@ -9,9 +9,13 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 async def print_joke():
     j = await Jokes()  # Initialise the class
+    start_invoke_time = datetime.now()
     logging.info(" Joke API invocation STARTED.")
     joke = await j.get_joke()  # Retrieve a random joke
-    logging.info(" Joke API invocation ENDED.")
+    end_invoke_time = datetime.now()
+    duration = (end_invoke_time - start_invoke_time).total_seconds()
+    logging.info(f" Joke API invocation ENDED. Took {duration:.3f}s")
+
     if joke["type"] == "single": # Print the joke
         print(joke["joke"])
     else:
@@ -35,7 +39,7 @@ async def print_quote():
         author = "Unknown"
     end_invoke_time = datetime.now()
     duration = (end_invoke_time - start_invoke_time).total_seconds()
-    logging.info(" Quote API invocation ENDED. Took {duration:.3f}s")
+    logging.info(f" Quote API invocation ENDED. Took {duration:.3f}s")
     logging.info(f"Quote: {quote_text} - Author: {author}")
 
 async def main():
