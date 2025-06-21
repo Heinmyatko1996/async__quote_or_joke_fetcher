@@ -17,6 +17,8 @@ This project fetches and displays a random joke and a random inspirational quote
 Before you run this application, make sure you have the following installed:
 
 * **Python 3.13+**
+* **uv** (optional)
+* **virtual environment**
 
 ---
 ## Installation
