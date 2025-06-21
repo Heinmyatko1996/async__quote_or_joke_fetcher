@@ -2,6 +2,7 @@
 # Joke and Quote Fetcher
 
 This project fetches and displays a random joke and a random inspirational quote using asynchronous programming in Python. It leverages the `jokeapi` library for jokes and the ZenQuotes API for quotes.
+This project demonstrates how to asynchronously fetch and display data from multiple external APIs using Python. While the current example uses a joke and quote API, the underlying principles and patterns are directly applicable to building scalable data ingestion pipelines for **Big Data Engineering** scenarios.
 
 ---
 ## Features
