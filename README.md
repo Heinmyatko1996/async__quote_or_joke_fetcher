@@ -49,4 +49,4 @@ python main.py
 ```
 or
 ```
-uv main.py
+uv run main.py
