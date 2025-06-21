@@ -45,4 +45,6 @@ Before you run this application, make sure you have the following installed:
 Simply execute the main Python file:
 
 ```bash
-python your_script_name.py
+python main.py ```
+
+or ```uv main.py```
